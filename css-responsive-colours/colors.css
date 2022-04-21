@@ -1,0 +1,110 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    
+}
+p{
+    margin: 0;
+    font-size: 40px;
+    
+}
+.shadow-wrap{
+    margin: 5px;
+    box-shadow: 0px 5px 5px #282d2e;
+    height: 100%;
+    
+    
+    
+}
+.flex-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: bold;
+    
+    
+    
+}
+.flex-container > *{
+    padding: 10px;
+    margin: 5px;
+    
+}
+[class*="col"]{
+    display: flex;
+    width: 95%;
+    height: 150px;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    box-shadow: 0px 5px 5px #282d2e;
+}
+
+
+.link{
+    
+}
+
+html{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+/*taustavärit pääsivu*/
+.col_red_1{background-color:#050505 ;}
+.col_others_2{background-color:#d57276 ;}
+.col_others_3{background-color:#d6c2bc ;}
+.col_others_4{background-color:#c0cccc ;}
+.col_others_5{background-color:#65b2c6 ;}
+.col_red_6 {background-color: #050505;}
+
+/*taustavärit orange_pink sivu*/
+.col_others_ora_2{background-color: #FDD1D3;}
+.col_others_ora_3{background-color: #FBACB0;}
+.col_others_ora_4{background-color: #AC4045;}
+.col_others_ora_5{background-color: #831B20;}
+
+/*taustavärit sand sivu*/
+.col_others_sand_2{background-color: #FFFCFB;}
+.col_others_sand_3{background-color: #FEF3EF;}
+.col_others_sand_4{background-color: #B4978F;}
+.col_others_sand_5{background-color: #947167;}
+
+/*taustavärit grey_blue sivu*/
+.col_others_grey_2{background-color: #FFFFFF;}
+.col_others_grey_3{background-color: #EBEDED;}
+.col_others_grey_4{background-color: #8DA5A5;}
+.col_others_grey_5{background-color: #658A8A;}
+
+/*taustavärit light_blue sivu*/
+.col_others_blue_2{background-color: #C8EAF4;}
+.col_others_blue_3{background-color: #93CFE0;}
+.col_others_blue_4{background-color: #4191A8;}
+.col_others_blue_5{background-color: #277A92;}
+
+[class*="col_red"] p{
+    color: azure;
+}
+.fas{
+    font-size: 40px;
+}
+@media only screen and (max-width:600px){
+.col_red_6{
+    display: none;
+}
+
+}
+@media only screen and (min-width:800px){
+.flex-container{
+    max-width: 960px;
+    margin: auto;
+    flex-direction: unset;
+    flex-flow: row wrap;
+}
+[class*="col_others"]{
+    width: 47.9166667%;
+    margin: 1.04166667%;
+}
+[class*="col_red"]{
+    width: 97.9166667%;
+    margin: 1.04166667%;
+}
+}
